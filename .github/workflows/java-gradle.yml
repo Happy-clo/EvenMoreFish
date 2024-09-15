@@ -34,7 +34,7 @@ jobs:
       - name: Build with Gradle
         run: |
           chmod +x gradlew
-          ./gradlew build --info
+          ./gradlew build
 
       - name: Get timestamp and short SHA
         id: timestamp
