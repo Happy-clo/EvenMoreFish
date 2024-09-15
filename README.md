@@ -3,14 +3,14 @@
 ### 中文版本
 
 > [!CAUTION]  
-> 本分支仅用于个人开发提供构建或帮助，请勿直接使用构建附件。如出现版权或开源协议问题，本作者概不负责。
+> 本分支仅用于个人开发提供构建或帮助，请勿直接使用构建附件。如出现任何有关源插件问题，本作者概不负责。
 
 ---
 
 ### English Version
 
 > [!CAUTION]  
-> This branch is intended solely for personal development purposes and to provide builds or assistance. Please do not use the build attachments directly. The author assumes no responsibility for any copyright or open-source license issues that may arise.
+> This branch is only used for personal development to provide builds or help. Please do not use the build attachments directly. The author is not responsible for any problems with the source plugin.
 
 Improve your server's fishing experience with an incredible **fishing competition plugin** based on elsiff's MoreFish
 plugin
