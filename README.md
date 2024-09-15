@@ -1,13 +1,11 @@
 # 🐠 EvenMoreFish Spigot Plugin 🐟
 
-### 中文版本
+### Statement
 
 > [!CAUTION]  
 > 本分支仅用于个人开发提供构建或帮助，请勿直接使用构建附件。如出现任何有关源插件问题，本作者概不负责。
 
 ---
-
-### English Version
 
 > [!CAUTION]  
 > This branch is only used for personal development to provide builds or help. Please do not use the build attachments directly. The author is not responsible for any problems with the source plugin.
