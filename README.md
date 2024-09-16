@@ -1,24 +1,6 @@
 # 🐠 EvenMoreFish Spigot Plugin 🐟
 
-### Statement
-
-> [!CAUTION]  
-> 本分支仅用于个人开发提供构建或帮助，请勿直接使用构建附件。如出现任何有关源插件问题，本作者概不负责。
-
----
-
-> [!CAUTION]  
-> This branch is only used for personal development to provide builds or help. Please do not use the build attachments directly. The author is not responsible for any problems with the source plugin.
-
-Improve your server's fishing experience with an incredible **fishing competition plugin** based on elsiff's MoreFish
-plugin
-
-With over 60 custom fish in the default configurations, and the ability to add your own, this is the best competition
-plugin for your server.
-
----
-
-## ⭐ Features ⭐
+#### ⭐ Features ⭐
 
 - ### Custom item support
 
@@ -68,3 +50,12 @@ To contribute to translations, please create a pull request with a new messages.
 or `messages.fr.yml`
 
 Cheers, Oheers
+# Statement
+
+> [!CAUTION]  
+> 本分支仅用于个人开发提供学习研究，请勿直接使用任何附件。如出现任何有关源附件问题，本作者概不负责。
+
+---
+
+> [!CAUTION]  
+> This branch is only for personal development, study and research. Please do not use any attachments directly. The author is not responsible for any problems with the source attachments.
