@@ -499,15 +499,7 @@ public class Message {
      * @param type The competition type.
      */
     public void setCompetitionType(@NotNull final CompetitionType type) {
-        switch (type) {
-            case MOST_FISH -> setVariable("{type}", new Message(ConfigMessage.COMPETITION_TYPE_MOST).getRawMessage(false));
-            case SPECIFIC_FISH -> setVariable("{type}", new Message(ConfigMessage.COMPETITION_TYPE_SPECIFIC).getRawMessage(false));
-            case SPECIFIC_RARITY -> setVariable("{type}", new Message(ConfigMessage.COMPETITION_TYPE_SPECIFIC_RARITY).getRawMessage(false));
-            case LARGEST_TOTAL -> setVariable("{type}", new Message(ConfigMessage.COMPETITION_TYPE_LARGEST_TOTAL).getRawMessage(false));
-            case SHORTEST_FISH -> setVariable("{type}", new Message(ConfigMessage.COMPETITION_TYPE_SHORTEST).getRawMessage(false));
-            case SHORTEST_TOTAL -> setVariable("{type}", new Message(ConfigMessage.COMPETITION_TYPE_SHORTEST_TOTAL).getRawMessage(false));
-            default -> setVariable("{type}", new Message(ConfigMessage.COMPETITION_TYPE_LARGEST).getRawMessage(false));
-        }
+        setVariable("{type}", new Message(type.getTypeVariable()).getRawMessage(false));
     }
 
     /**
@@ -562,7 +554,9 @@ public class Message {
 
     public Message createCopy() {
         Message newMessage = new Message(this.message);
-        newMessage.setPlayer(this.relevantPlayer);
+        if (this.relevantPlayer != null) {
+            newMessage.setPlayer(this.relevantPlayer);
+        }
         newMessage.setVariables(this.liveVariables);
         newMessage.setCanHidePrefix(this.canHidePrefix);
         newMessage.setCanSilent(this.canSilent);
