@@ -64,7 +64,9 @@ public interface IFish extends Sortable {
 
     @NonNull Component getDisplayName();
 
-    int getCatchLimit();
+    int getGlobalCatchLimit();
+
+    int getPlayerCatchLimit();
 
     void setWeight(double weight);
 
@@ -183,6 +185,14 @@ public interface IFish extends Sortable {
             return getInteractRewards();
         }
         return getEatRewards();
+    }
+
+    /**
+     * @deprecated Use {@link #getGlobalCatchLimit()} instead.
+     */
+    @Deprecated(since = "2.4.7")
+    default int getCatchLimit() {
+        return getGlobalCatchLimit();
     }
 
 }

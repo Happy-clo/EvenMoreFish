@@ -88,8 +88,12 @@ public class Rarity extends ConfigBase implements IRarity {
         return getConfig().getDouble("weight");
     }
 
-    public int getCatchLimit() {
+    public int getGlobalCatchLimit() {
         return getConfig().getInt("catch-limit", -1);
+    }
+
+    public int getPlayerCatchLimit() {
+        return getConfig().getInt("player-catch-limit", -1);
     }
 
     @Override

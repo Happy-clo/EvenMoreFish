@@ -55,7 +55,8 @@ public class Fish implements IFish {
     private final boolean disableFisherman;
 
     private boolean showInJournal;
-    private final int catchLimit;
+    private final int globalCatchLimit;
+    private final int playerCatchLimit;
 
     private Fish(@NonNull Rarity rarity, @NonNull Section section) {
         this.section = section;
@@ -85,7 +86,8 @@ public class Fish implements IFish {
         this.factory.getDisplayName().setDefault(name);
 
         this.showInJournal = section.getBoolean("journal", true);
-        this.catchLimit = section.getInt("catch-limit", rarity.getCatchLimit());
+        this.globalCatchLimit = section.getInt("catch-limit", rarity.getGlobalCatchLimit());
+        this.playerCatchLimit = section.getInt("player-catch-limit", rarity.getPlayerCatchLimit());
 
         ItemConfig<List<Component>> lore = factory.getLore();
         if (lore.isEnabled()) {
@@ -375,8 +377,13 @@ public class Fish implements IFish {
     }
 
     @Override
-    public int getCatchLimit() {
-        return catchLimit;
+    public int getGlobalCatchLimit() {
+        return globalCatchLimit;
+    }
+
+    @Override
+    public int getPlayerCatchLimit() {
+        return playerCatchLimit;
     }
 
     @Override
