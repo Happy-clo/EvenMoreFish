@@ -8,6 +8,7 @@ import com.oheers.fish.api.sort.Sortable;
 import net.kyori.adventure.text.Component;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.inventory.ItemStack;
+import org.jetbrains.annotations.ApiStatus;
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
 
@@ -119,6 +120,9 @@ public interface IFish extends Sortable {
     @NonNull List<Reward> getCatchRewards();
 
     @NonNull List<Reward> getSellRewards();
+
+    @ApiStatus.Internal
+    boolean isTrackInDatabase();
 
     // Deprecated - Do not remove.
 

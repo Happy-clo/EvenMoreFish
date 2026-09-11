@@ -480,6 +480,10 @@ public class Fish implements IFish {
         this.showInJournal = showInJournal;
     }
 
+    public boolean isTrackInDatabase() {
+        return section.getBoolean("track-in-database", true);
+    }
+
     @Override
     public boolean equals(Object other) {
         if (other == this) {
